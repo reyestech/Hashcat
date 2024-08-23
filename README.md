@@ -4,7 +4,7 @@
 
 <h3> Hector M. Reyes  | Cybersecurity Analyst  </h3>
 
- ### [Google Docs Link | Azure Honeynet and Cloud Network Hardening](https://docs.google.com/document/d/1TbSMzlBtGITVFOTaBGqKXjKY0mPG14p5ZWra-Tj8WNk/pub)
+ ### [Google Docs Link | Hashcat: Password Cracking](https://docs.google.com/document/d/17igSscDJUErcfI_waof9F4CHnfXhgeABef__AKM4daQ/pub)
 
 ## Description 
 Welcome to my CTF Password-cracking project. This initiative focuses on the systematic exploration of a password-cracking challenge. The primary objective is to offer a detailed, step-by-step exposition of the process involved in identifying and exploiting a hashed password by utilizing diverse cybersecurity tools and methodologies. The challenge underscores essential competencies in ethical hacking, particularly in password security. <br/>
