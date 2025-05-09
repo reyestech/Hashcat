@@ -11,7 +11,7 @@
 ## Description 
 Welcome to the **Hashcat:** Password Cracking project. This initiative focuses on systematically tackling a password-cracking challenge. The primary objective is to provide a detailed, step-by-step explanation of identifying and exploiting a hashed password using various cybersecurity tools and methodologies. This challenge highlights essential skills in ethical hacking, particularly in password security. 
 
-### Steps to Solve: 
+### Steps to Solve 
 > 1. Identify the hash type.
 > 2. Crack the hash.
 > 3. Obtain the password.
@@ -21,99 +21,97 @@ Welcome to the **Hashcat:** Password Cracking project. This initiative focuses o
 >- Hashcat | Wordlists (e.g., rockyou.txt)
 >- Hashes.org | crackstation.net 
 
-<br /> 
-
 <img src="https://github.com/user-attachments/assets/6dfc9198-6054-44b3-9cdc-51d3a9cf02b3" width="80%" />
 
 
 # **Hashcat:** Password Cracking
-### Challenge Description:
+Challenge Description <br/>
 This challenge involves password cracking through hash analysis, a vital component of cybersecurity, particularly ethical hacking. Hash analysis requires understanding and decryption of cryptographic hash functions, which are commonly used to store passwords securely. The challenge tests one's ability to reverse-engineer these hashes to retrieve the original password, an essential skill for identifying and mitigating security vulnerabilities.
 
 ![password_strength](https://github.com/user-attachments/assets/46e0c415-8cd6-4246-a453-21666509c475)
-<br /> 
 
-### Relation to Ethical Hacking Course:
+### Relation to Ethical Hacking Course
 This exercise highlights the practical skills needed to crack passwords, which are crucial for both ethical hacking and cybersecurity defense strategies. Password cracking is not just about bypassing security, but also about understanding the importance of strong password policies and the consequences of using weak passwords. These goals align with the objectives of the ethical hacking course, which aims to equip learners with the knowledge to test, improve, and enhance security systems.
 
-### Lab Topic:
+### Lab Topic
 The laboratory concentrated on password security and cracking techniques, offering practical experience in ethical hacking methods. The lab explored different approaches to password cracking, including brute force attacks, dictionary attacks, and the use of advanced tools like Hashcat. Participants learned how to analyze various hash types, use word lists efficiently, and apply practical solutions to enhance password security in their systems.
 
-# Background Knowledge Needed
-
-### Hash Algorithms: </b>
-
-Types of Hash Algorithms: </b>
+### Hash Algorithms 
+Types of Hash Algorithms </b>
 > Understanding different types of hash algorithms, such as MD5, SHA-1, SHA-256, and NTLM, is crucial. Each algorithm has unique characteristics and vulnerabilities that affect how it can be cracked.
 
-Hash Function Behavior: </b>
+### Hash Function Behavior 
 > Knowledge of how hash functions work, including converting input data into a fixed-size string of characters, typically a hash code.
 
 ![image](https://github.com/user-attachments/assets/4b5ea32f-e265-47a2-b3ff-e3e1c9166e35)
 <br /> 
 
-### Wordlists: 
-> 1. **Precompiled Lists:** Familiarity with widely used word lists, such as rockyou.txt, which contain common passwords and phrases that can be used in dictionary attacks.
-> 2.	**Wordlist Management:** Skills in managing and updating wordlists to ensure they remain relevant and comprehensive, incorporating new and emerging password trends.
-> 3.	**Hashcat:** Installation and Setup: Proficiency in installing and configuring Hashcat in various environments, including virtual machines and cloud instances, including standard commands, options, and flags used for different types of attacks.
+### Wordlists 
+- **Precompiled Lists:** </b>
+Familiarity with widely used word lists, such as rockyou.txt, which contain common passwords and phrases that can be used in dictionary attacks.
+- **Wordlist Management:** </b>
+Skills in managing and updating wordlists to ensure they remain relevant and comprehensive, incorporating new and emerging password trends.
+- **Hashcat:** </b>
+Installation and Setup: Proficiency in installing and configuring Hashcat in various environments, including virtual machines and cloud instances, including standard commands, options, and flags used for different types of attacks.
 
 ![image](https://github.com/user-attachments/assets/4f654418-056c-4e3e-bdbb-68a1062989c3)
-<br /> 
 
-### Cryptography Basics:
-> 1.	**Symmetric vs. Asymmetric Encryption:** Understanding the differences between these two main types of encryption and their respective uses.
-> 2.	**Salting:** Knowledge of how salts enhance security by adding randomness to hash functions and how to handle salted hashes during cracking attempts.
-> 3. **Key Management:** This section offers insights into best practices for key management and how weak critical practices can lead to vulnerabilities.
+### Cryptography Basics 
+- **Symmetric vs. Asymmetric Encryption:** </b>
+Understanding the differences between these two main types of encryption and their respective uses.
+- **Salting:** </b>
+Knowledge of how salts enhance security by adding randomness to hash functions and how to handle salted hashes during cracking attempts.
+- **Key Management:** </b>
+This section offers insights into best practices for key management and how weak critical practices can lead to vulnerabilities..
 
-### Operating Systems:
-> 1. **Linux Fundamentals:** Proficiency in navigating and operating within Linux environments, particularly Kali Linux, commonly used for cybersecurity tasks.<br />
-> 2. **Command-Line Skills:** Strong command-line skills for executing scripts, managing files, and troubleshooting issues during cracking. <br /> 
+### Operating Systems 
+- **Linux Fundamentals:** </b>
+Proficiency in navigating and operating within Linux environments, particularly Kali Linux, which is commonly used for cybersecurity tasks.
+- **Command-Line Skills:** </b>
+Strong command-line skills for executing scripts, managing files, and troubleshooting issues during cracking.
 
-### Cybersecurity Concepts:
-> 1.	**Password Policies:** Understanding the principles of strong password policies and how weak passwords compromise security.
-> 2.	**Attack Vectors:** Awareness of various attack vectors that leverage weak passwords and hash vulnerabilities, and how to defend against them.
-> 3.	**Defense Mechanisms:** Knowledge of defense mechanisms such as multi-factor authentication (MFA) and how they mitigate the risks associated with password cracking.
+### Cybersecurity Concepts
+1.	**Password Policies:** </b>
+Understanding the principles of strong password policies and how weak passwords compromise security.
+2.	**Attack Vectors:** </b>
+Awareness of various attack vectors that leverage weak passwords and hash vulnerabilities, and how to defend against them.
+3.	**Defense Mechanisms:** </b>
+Knowledge of defense mechanisms such as multi-factor authentication (MFA) and how they mitigate the risks associated with password cracking.
 
+---
 
 # Introduction to the Problem
 The first step in addressing this challenge was to identify the hash type. I used hash.com. After using a hash analyzer, it was established that the hash type was NTLM. With this knowledge in hand, I configured my Kali Linux environment to commence the password-cracking process.
 
 ![image](https://github.com/user-attachments/assets/5764b952-cd99-4e34-9b14-6fc31e981a43)
-<br /> 
 
 ### Working Toward a Solution
-To crack the NTLM hash, I used the rockyou.txt word list with Hashcat. The environment setup involved ensuring Hashcat was installed and configured correctly, and preparing the necessary files for the Attack. <br />
-To crack the NTLM hash, I utilized the rockyou.txt wordlist with Hashcat. The environment setup involved ensuring that Hashcat was installed and configured correctly, as well as preparing the necessary files for the Attack. <br />
-
+To crack the NTLM hash, I used the rockyou.txt word list with Hashcat. The environment setup involved ensuring Hashcat was installed and configured correctly, and preparing the necessary files for the Attack. <br/>
+To crack the NTLM hash, I utilized the rockyou.txt wordlist with Hashcat. The environment setup involved ensuring that Hashcat was installed and configured correctly, as well as preparing the necessary files for the Attack. <br/>
 ![image](https://github.com/user-attachments/assets/57efc0ae-fbb4-4195-9dd1-942c02c12d22)
-<br /> 
 
 
-Steps Involved:
-### Environment Setup:
+### Environment Setup
 Kali Linux VM Configuration: Deployed Kali Linux via VirtualBox, ensuring the virtual machine was up-to-date and configured for optimal performance.
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
 
 ![image](https://github.com/user-attachments/assets/5a2425ad-46ef-4a06-9cd5-40577842d6e1)
-<br /> 
 
-
-### Hashcat Installation:
+### Hashcat Installation
 It was verified that Hashcat was installed correctly on the Kali Linux VM. If you're using another Linux Distribution, install hashcat. 
 ```
 sudo apt-get install hashcat
 ```
 
-
-Verify Installation: 
+### Verify Installation  
 Run a simple command to check the installation if hashcat is installed.
 ```
 hashcat-- version
 ```
 
-### Preparation:
+### Preparation
 Hash File Creation: Create a text file containing the hash, for example, hash.txt. Use the "ls" command to verify the file location.
 ```
 echo "A675081AAF0B43D60A819653635AC405" > hash.txt
@@ -122,20 +120,20 @@ echo "A675081AAF0B43D60A819653635AC405" > hash.txt
 ### Wordlist Selection: 
 I selected the rockyou.txt wordlist, a comprehensive and widely used list of common passwords, to ensure it was available and accessible on the Kali Linux VM.
 
-Locate the rockyou.txt or wordlists on the VM:
+Locate the rockyou.txt or wordlists on the VM
 ```
 /usr/share/wordlists/rockyou.txt
 ```
 
-### Unzip the wordlist if it is compressed:
+### Unzip the wordlist if it is compressed
 ```
 gunzip /usr/share/wordlists/rockyou.txt.gz
 ```
 
-#### Execution:
+Execution <br/>
 Command Configuration: Constructed the Hashcat command with the necessary parameters to target the NTLM hash type, specifying the hash file and the wordlist. The command included options for efficient processing, such as selecting the attack mode and enabling GPU acceleration.
 
-### Explanation of parameters:
+### Explanation of parameters
 ```
 1.	-m 1000: Specifies the hash type as NTLM.
 2.	-a 0: Sets the attack mode to dictionary attack.
@@ -145,12 +143,12 @@ Command Configuration: Constructed the Hashcat command with the necessary parame
 ```
 
 
-### Initiating the Attack: 
+### Initiating the Attack 
 I ran the configured Hashcat command, initiating the password-cracking process. I monitored the progress and ensured the system resources were optimally utilized to complete the task efficiently.
 ```
 hashcat -m 1000 -a 0 -o hash.txt hash.txt /usr/share/wordlists/rockyou.txt
 ```
-### Password Recovery:
+### Password Recovery
 Upon completion, check the hash.txt file for the cracked password:
 ```
 cat hash.txt
@@ -163,7 +161,7 @@ cat hash.txt
 
 ## Breakdown: Steps, Strategies, Pitfalls, and Lessons Learned
 
-#### Steps:
+#### Steps
 > 1. Identified the hash type as NTLM.
 > 2. Utilized the rockyou.txt wordlist with Hashcat.
 > 3. Successfully cracked the hash to reveal the password.
