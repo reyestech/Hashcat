@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/6759ec73-ccc1-4315-ad22-2bb3f6dd89bd)
+
+![image](https://github.com/user-attachments/assets/a0b5a5cf-0053-45e4-a7cf-b0e09d0b4eba)
+
 
 # **Hashcat:** Password Cracking
 
@@ -7,23 +9,24 @@
  ### [Google Docs Link | Hashcat: Password Cracking](https://docs.google.com/document/d/17igSscDJUErcfI_waof9F4CHnfXhgeABef__AKM4daQ/pub)
 
 ## Description 
-Welcome to the **Hashcat:** Password Cracking project. This initiative focuses on systematically tackling a password-cracking challenge. The primary objective is to provide a detailed, step-by-step explanation of identifying and exploiting a hashed password using various cybersecurity tools and methodologies. This challenge highlights essential skills in ethical hacking, particularly in password security. <br/>
+Welcome to the **Hashcat:** Password Cracking project. This initiative focuses on systematically tackling a password-cracking challenge. The primary objective is to provide a detailed, step-by-step explanation of identifying and exploiting a hashed password using various cybersecurity tools and methodologies. This challenge highlights essential skills in ethical hacking, particularly in password security. 
 
-<h3> Steps to Solve:  </h3>
+### Steps to Solve: 
+> 1. Identify the hash type.
+> 2. Crack the hash.
+> 3. Obtain the password.
 
-1. Identify the hash type.
-2. Crack the hash.
-3. Obtain the password.
-
-Tools Used </h3>
+### Tools Used 
 >- Kali Linux | VMware  
 >- Hashcat | Wordlists (e.g., rockyou.txt)
 >- Hashes.org | crackstation.net 
 
- ![image](https://github.com/user-attachments/assets/88101787-265e-451e-a906-04b12e576587)
 <br /> 
 
-# CTF Category Description
+<img src="https://github.com/user-attachments/assets/6dfc9198-6054-44b3-9cdc-51d3a9cf02b3" width="80%" />
+
+
+# **Hashcat:** Password Cracking
 ### Challenge Description:
 This challenge involves password cracking through hash analysis, a vital component of cybersecurity, particularly ethical hacking. Hash analysis requires understanding and decryption of cryptographic hash functions, which are commonly used to store passwords securely. The challenge tests one's ability to reverse-engineer these hashes to retrieve the original password, an essential skill for identifying and mitigating security vulnerabilities.
 
