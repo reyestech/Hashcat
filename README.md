@@ -1,28 +1,24 @@
 ![image](https://github.com/user-attachments/assets/6759ec73-ccc1-4315-ad22-2bb3f6dd89bd)
 
-# Hashcat: Password Cracking
+# **Hashcat:** Password Cracking
 
 <h3> Hector M. Reyes  | Cybersecurity Analyst  </h3>
 
  ### [Google Docs Link | Hashcat: Password Cracking](https://docs.google.com/document/d/17igSscDJUErcfI_waof9F4CHnfXhgeABef__AKM4daQ/pub)
 
 ## Description 
-Welcome to my CTF Password-cracking project. This initiative focuses on systematically exploring a password-cracking challenge. The primary objective is to provide a detailed, step-by-step explanation of the process involved in identifying and exploiting a hashed password using various cybersecurity tools and methodologies. The challenge underscores essential competencies in ethical hacking, particularly in password security. <br/>
+Welcome to the **Hashcat:** Password Cracking project. This initiative focuses on systematically tackling a password-cracking challenge. The primary objective is to provide a detailed, step-by-step explanation of identifying and exploiting a hashed password using various cybersecurity tools and methodologies. This challenge highlights essential skills in ethical hacking, particularly in password security. <br/>
 
-<h3> Disclaimer  </h3>
-It's essential to note that this is for educational purposes only. Unauthorized hacking or cracking of passwords without permission is illegal and unethical. </b> 
-
-<h3> Steps to Solve: </h3>
+<h3> Steps to Solve:  </h3>
 
 1. Identify the hash type.
 2. Crack the hash.
 3. Obtain the password.
 
-<h3> Tools Used </h3>
-
-- <b> Kali Linux | VMware </b> 
-- <b> Hashcat | Wordlists (e.g., rockyou.txt)
-- <b> Hashes.org | crackstation.net </b>
+Tools Used </h3>
+>- Kali Linux | VMware  
+>- Hashcat | Wordlists (e.g., rockyou.txt)
+>- Hashes.org | crackstation.net 
 
  ![image](https://github.com/user-attachments/assets/88101787-265e-451e-a906-04b12e576587)
 <br /> 
@@ -37,7 +33,6 @@ This challenge involves password cracking through hash analysis, a vital compone
 ### Relation to Ethical Hacking Course:
 This exercise highlights the practical skills needed to crack passwords, which are crucial for both ethical hacking and cybersecurity defense strategies. Password cracking is not just about bypassing security, but also about understanding the importance of strong password policies and the consequences of using weak passwords. These goals align with the objectives of the ethical hacking course, which aims to equip learners with the knowledge to test, improve, and enhance security systems.
 
-
 ### Lab Topic:
 The laboratory concentrated on password security and cracking techniques, offering practical experience in ethical hacking methods. The lab explored different approaches to password cracking, including brute force attacks, dictionary attacks, and the use of advanced tools like Hashcat. Participants learned how to analyze various hash types, use word lists efficiently, and apply practical solutions to enhance password security in their systems.
 
@@ -46,38 +41,35 @@ The laboratory concentrated on password security and cracking techniques, offeri
 ### Hash Algorithms: </b>
 
 Types of Hash Algorithms: </b>
-Understanding different types of hash algorithms, such as MD5, SHA-1, SHA-256, and NTLM, is crucial. Each algorithm has unique characteristics and vulnerabilities that affect how it can be cracked.
+> Understanding different types of hash algorithms, such as MD5, SHA-1, SHA-256, and NTLM, is crucial. Each algorithm has unique characteristics and vulnerabilities that affect how it can be cracked.
 
 Hash Function Behavior: </b>
-Knowledge of how hash functions work, including converting input data into a fixed-size string of characters, typically a hash code.
+> Knowledge of how hash functions work, including converting input data into a fixed-size string of characters, typically a hash code.
 
 ![image](https://github.com/user-attachments/assets/4b5ea32f-e265-47a2-b3ff-e3e1c9166e35)
 <br /> 
 
 ### Wordlists: 
-1. Precompiled Lists: Familiarity with widely used word lists, such as rockyou.txt, which contain common passwords and phrases that can be used in dictionary attacks.
-2.	Wordlist Management: Skills in managing and updating wordlists to ensure they remain relevant and comprehensive, incorporating new and emerging password trends.
-3.	Hashcat: Installation and Setup: Proficiency in installing and configuring Hashcat in various environments, including virtual machines and cloud instances, including standard commands, options, and flags used for different types of attacks.
+> 1. **Precompiled Lists:** Familiarity with widely used word lists, such as rockyou.txt, which contain common passwords and phrases that can be used in dictionary attacks.
+> 2.	**Wordlist Management:** Skills in managing and updating wordlists to ensure they remain relevant and comprehensive, incorporating new and emerging password trends.
+> 3.	**Hashcat:** Installation and Setup: Proficiency in installing and configuring Hashcat in various environments, including virtual machines and cloud instances, including standard commands, options, and flags used for different types of attacks.
 
 ![image](https://github.com/user-attachments/assets/4f654418-056c-4e3e-bdbb-68a1062989c3)
 <br /> 
 
 ### Cryptography Basics:
-1.	Symmetric vs. Asymmetric Encryption: Understanding the differences between these two main types of encryption and their respective uses.
-2.	Salting: Knowledge of how salts enhance security by adding randomness to hash functions and how to handle salted hashes during cracking attempts.
-3. Key Management: This section offers insights into best practices for key management and how weak critical practices can lead to vulnerabilities.
-
+> 1.	**Symmetric vs. Asymmetric Encryption:** Understanding the differences between these two main types of encryption and their respective uses.
+> 2.	**Salting:** Knowledge of how salts enhance security by adding randomness to hash functions and how to handle salted hashes during cracking attempts.
+> 3. **Key Management:** This section offers insights into best practices for key management and how weak critical practices can lead to vulnerabilities.
 
 ### Operating Systems:
-1. Linux Fundamentals: Proficiency in navigating and operating within Linux environments, particularly Kali Linux, commonly used for cybersecurity tasks.<br />
-2. Command-Line Skills: Strong command-line skills for executing scripts, managing files, and troubleshooting issues during cracking. <br /> 
-
+> 1. **Linux Fundamentals:** Proficiency in navigating and operating within Linux environments, particularly Kali Linux, commonly used for cybersecurity tasks.<br />
+> 2. **Command-Line Skills:** Strong command-line skills for executing scripts, managing files, and troubleshooting issues during cracking. <br /> 
 
 ### Cybersecurity Concepts:
-1.	Password Policies: Understanding the principles of strong password policies and how weak passwords compromise security.
-2.	Attack Vectors: Awareness of various attack vectors that leverage weak passwords and hash vulnerabilities, and how to defend against them.
-3.	Defense Mechanisms: Knowledge of defense mechanisms such as multi-factor authentication (MFA) and how they mitigate the risks associated with password cracking.
-<br />
+> 1.	**Password Policies:** Understanding the principles of strong password policies and how weak passwords compromise security.
+> 2.	**Attack Vectors:** Awareness of various attack vectors that leverage weak passwords and hash vulnerabilities, and how to defend against them.
+> 3.	**Defense Mechanisms:** Knowledge of defense mechanisms such as multi-factor authentication (MFA) and how they mitigate the risks associated with password cracking.
 
 
 # Introduction to the Problem
@@ -169,58 +161,53 @@ cat hash.txt
 ## Breakdown: Steps, Strategies, Pitfalls, and Lessons Learned
 
 #### Steps:
-1. Identified the hash type as NTLM.
-2. Utilized the rockyou.txt wordlist with Hashcat.
-3. Successfully cracked the hash to reveal the password.
+> 1. Identified the hash type as NTLM.
+> 2. Utilized the rockyou.txt wordlist with Hashcat.
+> 3. Successfully cracked the hash to reveal the password.
 
 ### Strategies:
 
 #### Identifying Hash Type: 
-Accurate identification using online tools or command-line utilities.
+> Accurate identification using online tools or command-line utilities.
 
 #### Choosing the Right Tools and Environment:
-1. Kali Linux VM: Deployed via VirtualBox for a controlled environment.
-2. Hashcat: Selected for its powerful and flexible password-cracking capabilities.
-3. Wordlist: Utilized the comprehensive rockyou.txt wordlist.
+> 1. **Kali Linux VM:** Deployed via VirtualBox for a controlled environment.
+> 2. **Hashcat:** Selected for its powerful and flexible password-cracking capabilities.
+> 3. **Wordlist:** Utilized the comprehensive rockyou.txt wordlist.
 
 #### Pitfalls:
 Misidentifying the hash type.
-Employing an outdated or incomplete wordlist.
+> Employing an outdated or incomplete wordlist.
 
-### Key Lessons Learned
-1.	Accurate Hash Identification:
+## Key Lessons Learned
+1.	**Accurate Hash Identification:** <br /> 
 Correctly identifying the hash type is crucial for successful password cracking. Reliable hash analyzers and a solid understanding of different hashing algorithms are essential first steps.
-2.	Tool Proficiency:
+2.	**Tool Proficiency:** <br /> 
 Familiarity with powerful tools like Hashcat and effective use in environments like Kali Linux VM ensures efficient and effective cracking processes. Understanding the features of these tools can enhance your results.
-3.	Importance of Wordlists:
+3.	**Importance of Wordlists:** <br /> 
 The quality and comprehensiveness of wordlists, such as rockyou.txt, significantly impact success rates. Up-to-date and extensive wordlists increase the likelihood of successful password cracking.
-4.	Attention to Detail:
+4.	**Attention to Detail:** <br /> 
 Meticulous preparation and verification of all details, including the hash type, word list, and tool settings, are crucial. Oversight can lead to failure, making accuracy critical at every step.
-5.	Strategic Approach:
+5.	**Strategic Approach:** <br /> 
 A methodical approach to solving challenges involves systematic planning and execution. Identifying potential pitfalls and strategizing can improve success rates.
-6.	Continuous Learning:
-Engaging in practical exercises, such as CTF challenges, keeps skills sharp and keeps understanding current. The dynamic nature of cybersecurity necessitates ongoing learning and adaptation.
-7.	Application in Real-World Scenarios:
+6.	**Continuous Learning:** <br /> 
+Engaging in practical exercises, such as CTF challenges, keeps skills sharp and understanding current. The dynamic nature of cybersecurity necessitates ongoing learning and adaptation.
+7.	**Application in Real-World Scenarios:** <br /> 
 The knowledge gained directly applies to professional cybersecurity roles, emphasizing practical skills in anticipating and defending against threats.
 
 
 ### Relationship to the Workplace
 Understanding and executing hash-cracking methodologies is indispensable for cybersecurity professionals. This expertise is precious for Red Team members, such as penetration testers, who must simulate real-world attacks to identify vulnerabilities within an organization's security infrastructure. Blue Team members, such as SOC analysts and security evaluators, benefit from this knowledge by gaining insight into potential threats and developing effective defense strategies. <br /> 
 
-Cybersecurity experts can master password-cracking techniques to proactively address and mitigate security weaknesses, ensuring a more resilient security posture. This proficiency not only helps identify and rectify vulnerabilities but also plays a crucial role in educating stakeholders about the importance of strong password policies and comprehensive security measures. In essence, the skills and insights gained from this project contribute significantly to the overarching goal of safeguarding organizational assets and maintaining robust cybersecurity defenses.
+Cybersecurity experts can master password-cracking techniques to proactively address and mitigate security weaknesses, ensuring a more resilient security posture. This proficiency helps identify and rectify vulnerabilities and plays a crucial role in educating stakeholders about the importance of strong password policies and comprehensive security measures. In essence, the skills and insights gained from this project contribute significantly to the overarching goal of safeguarding organizational assets and maintaining robust cybersecurity defenses.
 
 ![Hashcat-Animation](https://github.com/user-attachments/assets/647d783c-6964-4b87-ac18-106ba69903c7)
 <br /> 
 
-## Summary
-This project exemplifies the critical skills required to solve a Capture the Flag (CTF) challenge that focuses on password cracking through hash analysis. By accurately identifying the hash type as NTLM and using the robust password-cracking tool Hashcat, along with the comprehensive rockyou.txt wordlist, I successfully cracked the password for the given user. This process highlighted the importance of precisely identifying hash types, strategically selecting tools and resources, and meticulously verifying all details to ensure success.  <br />
+## **Summary**
+This project exemplifies the critical skills required to solve a Capture the Flag (CTF) challenge, focusing on password cracking through hash analysis. By accurately identifying the hash type as NTLM and using the robust password-cracking tool Hashcat and the comprehensive rockyou.txt wordlist, I successfully cracked the password for the given user. This process highlighted the importance of identifying hash types, strategically selecting tools and resources, and meticulously verifying all details to ensure success.  <br />
 
 The knowledge and techniques applied in this project are directly relevant to cybersecurity. They emphasize the necessity for cybersecurity professionals, particularly those involved in penetration testing and security operations, to effectively understand and counteract password-based threats. The experience gained from this project reinforces the value of practical, hands-on exercises in developing and honing the skills essential for maintaining robust security infrastructures in real-world scenarios.
-
-#### References
-Hashcat. (2024). Hashcat User Guide. Retrieved from Hashcat User Guide <br />
-SANS Institute. (2022). The Benefits of Capture the Flag Competitions for Cybersecurity Training. Retrieved from SANS Whitepaper  <br />
-Openwall. (2020). Wordlists and Tools. Retrieved from Openwall <br />
 
 ![image](https://github.com/user-attachments/assets/79b5cba3-2343-4b3d-b4dd-f6e6f7874b8a)
 
