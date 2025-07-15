@@ -8,7 +8,8 @@
 
  ### [Google Docs Link | Hashcat: Password Cracking](https://docs.google.com/document/d/17igSscDJUErcfI_waof9F4CHnfXhgeABef__AKM4daQ/pub)
 
-## Description 
+## **Intro**
+**Description** 
 Welcome to the **Hashcat:** Password Cracking project. This initiative focuses on systematically tackling a password-cracking challenge. The primary objective is to provide a detailed, step-by-step explanation of identifying and exploiting a hashed password using various cybersecurity tools and methodologies. This challenge highlights essential skills in ethical hacking, particularly in password security. 
 
 ### Steps to Solve 
@@ -195,7 +196,6 @@ A methodical approach to solving challenges involves systematic planning and exe
 Engaging in practical exercises, such as CTF challenges, keeps skills sharp and ensures understanding of current trends. The dynamic nature of cybersecurity necessitates ongoing learning and adaptation.
 7.	**Application in Real-World Scenarios:** <br /> 
 The knowledge gained directly applies to professional cybersecurity roles, emphasizing practical skills in anticipating and defending against threats.
-
 
 ### Relationship to the Workplace
 Understanding and executing hash-cracking methodologies is indispensable for cybersecurity professionals. This expertise is precious for Red Team members, such as penetration testers, who must simulate real-world attacks to identify vulnerabilities within an organization's security infrastructure. Blue Team members, such as SOC analysts and security evaluators, benefit from this knowledge by gaining insight into potential threats and developing effective defense strategies. <br /> 
