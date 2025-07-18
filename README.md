@@ -1,12 +1,19 @@
 
-![image](https://github.com/user-attachments/assets/a0b5a5cf-0053-45e4-a7cf-b0e09d0b4eba)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a0b5a5cf-0053-45e4-a7cf-b0e09d0b4eba" alt="image" width="110%" />
+</p>
+
+---
 
 
 # **Hashcat:** Password Cracking
 
 <h3> Hector M. Reyes  | Cybersecurity Analyst  </h3>
 
- ### [Google Docs Link | Hashcat: Password Cracking](https://docs.google.com/document/d/17igSscDJUErcfI_waof9F4CHnfXhgeABef__AKM4daQ/pub)
+### [Google Docs Link | Hashcat: Password Cracking](https://docs.google.com/document/d/17igSscDJUErcfI_waof9F4CHnfXhgeABef__AKM4daQ/pub)
+
+
+---
 
 ## **Intro**
 **Description** 
@@ -24,6 +31,7 @@ Welcome to the **Hashcat:** Password Cracking project. This initiative focuses o
 
 <img src="https://github.com/user-attachments/assets/6dfc9198-6054-44b3-9cdc-51d3a9cf02b3" width="80%" />
 
+---
 
 # **Hashcat:** Password Cracking
 Challenge Description <br/>
@@ -160,6 +168,9 @@ cat hash.txt
 ![image](https://github.com/user-attachments/assets/a59eaf46-29a9-40e4-86dd-38e69b847279)
 <br /> 
 
+
+---
+
 ## Breakdown: Steps, Strategies, Pitfalls, and Lessons Learned
 
 #### Steps
@@ -204,6 +215,8 @@ Cybersecurity experts can master password-cracking techniques to proactively add
 
 ![Hashcat-Animation](https://github.com/user-attachments/assets/647d783c-6964-4b87-ac18-106ba69903c7)
 <br /> 
+
+---
 
 ## **Summary**
 This project exemplifies the critical skills required to solve a Capture the Flag (CTF) challenge, with a focus on password cracking through hash analysis. By accurately identifying the hash type as NTLM and utilizing the robust password-cracking tool Hashcat, along with the comprehensive rockyou.txt wordlist, I successfully cracked the password for the given user. This process highlighted the importance of identifying hash types, strategically selecting tools and resources, and meticulously verifying all details to ensure success.  <br />
