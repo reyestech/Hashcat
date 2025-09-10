@@ -1,33 +1,57 @@
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a0b5a5cf-0053-45e4-a7cf-b0e09d0b4eba" alt="image" width="110%" />
 </p>
 
 ---
 
-
 # **Hashcat:** Password Cracking
 
-<h3> Hector M. Reyes  | Cybersecurity Analyst  </h3>
-
-### [Google Docs Link | Hashcat: Password Cracking](https://docs.google.com/document/d/17igSscDJUErcfI_waof9F4CHnfXhgeABef__AKM4daQ/pub)
-
+### Hector M. Reyes  | Cybersecurity Analyst
 
 ---
 
-## **Intro**
-**Description** 
-Welcome to the **Hashcat:** Password Cracking project. This initiative focuses on systematically tackling a password-cracking challenge. The primary objective is to provide a detailed, step-by-step explanation of identifying and exploiting a hashed password using various cybersecurity tools and methodologies. This challenge highlights essential skills in ethical hacking, particularly in password security. 
+# 🔐 Hashcat: Password Cracking
+
+This lab demonstrates password cracking with **Hashcat** in a Kali Linux VM, focusing on **NTLM hashes** commonly used in Windows environments.  
+The goal: identify the hash type, configure the cracking environment, and successfully recover the original password using **rockyou.txt** wordlist.  
+
+Key Takeaways:  
+- Identified NTLM hash type using online analyzers.  
+- Executed Hashcat with optimized parameters for dictionary attacks.  
+- Cracked the password and validated recovery process.  
+- Applied lessons on password policy strength and defensive countermeasures.
+
 
 ### Steps to Solve 
-> 1. Identify the hash type.
-> 2. Crack the hash.
-> 3. Obtain the password.
+1. Identify hash type (NTLM).
+2. Configure Kali VM & Hashcat.
+3. Prepare hash file & wordlist.
+4. Run the Hashcat command.
+5. Verify cracked password.
 
-### Tools Used 
->- Kali Linux | VMware  
->- Hashcat | Wordlists (e.g., rockyou.txt)
->- Hashes.org | crackstation.net 
+### 🧰 Tools Reference
+
+| **Category**   | **Tool / Feature**                  | **Purpose**                                    |
+| -------------- | ----------------------------------- | ---------------------------------------------- |
+| **OS**         | Kali Linux (VMware / VirtualBox)    | Controlled lab environment for cracking tasks  |
+| **Cracking**   | Hashcat                             | Password hash cracking via GPU/CPU acceleration|
+| **Wordlists**  | rockyou.txt, custom wordlists       | Dictionary/brute-force attacks on hashes       |
+| **Lookup**     | Hashes.org / crackstation.net       | Online hash identification & verification      |
+| **Utilities**  | gzip / gunzip, echo, cat, ls        | Manage wordlists, create hash files, verify output |
+
+---
+
+### 🔑 Key Hash Algorithms
+
+| **Algorithm** | **Description**                                | **Common Use Case**                       |
+| ------------- | ---------------------------------------------- | ----------------------------------------- |
+| **MD5**       | 128-bit, fast but weak and collision-prone     | Legacy web apps, older password storage   |
+| **SHA-1**     | 160-bit, more secure than MD5 but still broken | Legacy SSL/TLS certs, older systems       |
+| **SHA-256**   | 256-bit, widely used and more secure           | Modern password storage, blockchain apps  |
+| **NTLM**      | Microsoft hash format for Windows passwords    | Windows authentication (Active Directory) |
+| **bcrypt**    | Slow hashing with salt, resistant to brute force| Modern password databases                 |
+
+> 🕵️‍♂️ **Happy Hunting!**
 
 <img src="https://github.com/user-attachments/assets/6dfc9198-6054-44b3-9cdc-51d3a9cf02b3" width="80%" />
 
@@ -48,6 +72,17 @@ The laboratory focused on password security and cracking techniques, providing p
 ### Hash Algorithms 
 Types of Hash Algorithms </b>
 > Understanding different types of hash algorithms, such as MD5, SHA-1, SHA-256, and NTLM, is crucial. Each algorithm has unique characteristics and vulnerabilities that affect how it can be cracked.
+
+### 🔑 Key Hash Algorithms
+
+| **Algorithm** | **Strengths**            | **Weaknesses**              | **Where Seen**                |
+| ------------- | ------------------------ | --------------------------- | ----------------------------- |
+| MD5           | Fast, lightweight        | Broken, collisions easy     | Legacy apps, old DBs          |
+| SHA-1         | More secure than MD5     | Broken, weak for modern use | SSL certs, legacy systems     |
+| SHA-256       | Strong, widely used      | Slower than MD5/SHA-1       | Modern apps, blockchain       |
+| NTLM          | Windows authentication   | Vulnerable to brute force   | Active Directory environments |
+| bcrypt        | Salted, slow, resistant  | Performance cost            | Modern password databases     |
+
 
 ### Hash Function Behavior 
 > Knowledge of how hash functions work, including converting input data into a fixed-size string of characters, typically a hash code.
@@ -167,7 +202,6 @@ cat hash.txt
 
 ![image](https://github.com/user-attachments/assets/a59eaf46-29a9-40e4-86dd-38e69b847279)
 <br /> 
-
 
 ---
 
