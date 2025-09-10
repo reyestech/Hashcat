@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a0b5a5cf-0053-45e4-a7cf-b0e09d0b4eba" alt="image" width="110%" />
+  <img src="https://github.com/user-attachments/assets/a0b5a5cf-0053-45e4-a7cf-b0e09d0b4eba" alt="image" width="90%" />
 </p>
 
 ---
@@ -8,7 +8,10 @@
 ### Hector M. Reyes  | Cybersecurity Analyst
 **Focus:** End-to-end password cracking workflow using Hashcat in a Kali Linux VM.
 
-![password_strength](https://github.com/user-attachments/assets/46e0c415-8cd6-4246-a453-21666509c475)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/46e0c415-8cd6-4246-a453-21666509c475" width="50%" alt="password_strength"/>
+</div>
+
 
 ## TL;DR
 - Crack a provided **NTLM** hash with **Hashcat** + **rockyou.txt** in a Kali VM.
@@ -45,9 +48,10 @@ This lab demonstrates a reproducible, ethical workflow to crack a single NTLM ha
 
 > 🕵️‍♂️ **Happy Hunting!**
 
-<img src="https://github.com/user-attachments/assets/6dfc9198-6054-44b3-9cdc-51d3a9cf02b3" width="80%" />
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6dfc9198-6054-44b3-9cdc-51d3a9cf02b3" width="70%" alt="hashcat_lab"/>
+</div>
 
----
 
 ---
 # **Hashcat:** Password Cracking
@@ -64,7 +68,7 @@ The lab focused on password security and cracking techniques, including brute-fo
 **Hash Algorithms**  
 Understanding hash algorithms (e.g., MD5, SHA-1, NTLM) is vital, as each has unique characteristics and vulnerabilities.  
 
-![image](https://github.com/user-attachments/assets/4b5ea32f-e265-47a2-b3ff-e3e1c9166e35)
+<img src="https://github.com/user-attachments/assets/4b5ea32f-e265-47a2-b3ff-e3e1c9166e35" width="50%" alt="hash_function_behavior"/>
 
 ## 🔑 Key Hash Algorithms (quick reference)
 | Algorithm | Notes (Strengths/Weaknesses)               | Common Use |
@@ -78,7 +82,7 @@ Understanding hash algorithms (e.g., MD5, SHA-1, NTLM) is vital, as each has uni
 **Wordlists**  
 Familiarity with precompiled lists like rockyou.txt for dictionary attacks and skills to manage and update wordlists are crucial.
 
-![image](https://github.com/user-attachments/assets/4f654418-056c-4e3e-bdbb-68a1062989c3)
+<img src="https://github.com/user-attachments/assets/4f654418-056c-4e3e-bdbb-68a1062989c3" width="40%" alt="hashcat_wordlist"/>
 
 **Hashcat: Installation and Setup**  
 Participants learned to install and configure Hashcat and understand commands for various attack types.
@@ -94,15 +98,16 @@ Knowledge of strong password policies, attack vectors that exploit weak password
 
 ---
 
-# The Problem
+## The Problem
 The first step in addressing this challenge was to identify the hash type. I used hash.com. After using a hash analyzer, it was established that the hash type was NTLM. With this knowledge in hand, I configured my Kali Linux environment to commence the password-cracking process.
 
-![image](https://github.com/user-attachments/assets/5764b952-cd99-4e34-9b14-6fc31e981a43)
+<img src="https://github.com/user-attachments/assets/5764b952-cd99-4e34-9b14-6fc31e981a43" width="40%" alt="hashcat_problem"/>
 
 ### Working Toward a Solution
 To crack the NTLM hash, I used the rockyou.txt word list with Hashcat. The environment setup involved ensuring that Hashcat was installed and configured correctly, as well as preparing the necessary files for the Attack. <br/>
 To crack the NTLM hash, I utilized the rockyou.txt wordlist with Hashcat. The environment setup involved ensuring that Hashcat was installed and configured correctly, as well as preparing the necessary files for the Attack. <br/>
-![image](https://github.com/user-attachments/assets/57efc0ae-fbb4-4195-9dd1-942c02c12d22)
+
+<img src="https://github.com/user-attachments/assets/57efc0ae-fbb4-4195-9dd1-942c02c12d22" width="50%" alt="hashcat_solution"/>
 
 ## 🚀 Setup & Pre-Engagement (One-Time Prep)
 Stand up a minimal, reproducible environment to avoid false starts.
@@ -123,8 +128,7 @@ Kali Linux VM Configuration: Deployed Kali Linux via VirtualBox, ensuring the vi
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
-
-![image](https://github.com/user-attachments/assets/5a2425ad-46ef-4a06-9cd5-40577842d6e1)
+<img src="https://github.com/user-attachments/assets/5a2425ad-46ef-4a06-9cd5-40577842d6e1" width="50%" alt="hashcat_kali_update"/>
 
 ### 2) Hashcat Installation
 It was verified that Hashcat was installed correctly on the Kali Linux VM. If you're using another Linux Distribution, install hashcat. 
@@ -159,7 +163,7 @@ gunzip /usr/share/wordlists/rockyou.txt.gz
 ### 7) Execution
 Command Configuration: Constructed the Hashcat command with the necessary parameters to target the NTLM hash type, specifying the hash file and the wordlist. The command included options for efficient processing, such as selecting the attack mode and enabling GPU acceleration.
 
-### Explanation of parameters
+#### Explanation of parameters
 ```
 1.	-m 1000: Specifies the hash type as NTLM.
 2.	-a 0: Sets the attack mode to dictionary attack.
@@ -170,46 +174,51 @@ Command Configuration: Constructed the Hashcat command with the necessary parame
 
 ### 9) Initiating the Attack 
 I ran the configured Hashcat command, initiating the password-cracking process. I monitored the progress and ensured the system resources were optimally utilized to complete the task efficiently.
+
 ```
 hashcat -m 1000 -a 0 -o hash.txt hash.txt /usr/share/wordlists/rockyou.txt
 ```
+
 ### 10) Password Recovery
 Upon completion, check the hash.txt file for the cracked password:
 ```
 cat hash.txt
 ```
 
-![image](https://github.com/user-attachments/assets/1147dab0-4318-4a7b-b654-52b7ef7f0a9b)
-
-![image](https://github.com/user-attachments/assets/a59eaf46-29a9-40e4-86dd-38e69b847279)
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/1147dab0-4318-4a7b-b654-52b7ef7f0a9b" width="50%" alt="Hashcat Result 1"/>
+  <img src="https://github.com/user-attachments/assets/a59eaf46-29a9-40e4-86dd-38e69b847279" width="50%" alt="Hashcat Result 2"/>
+</div>
 
 ---
 
 ## 🧭 Strategies, Pitfalls, Lessons
 
-### Strategies
+#### Strategies
 - Validate hash type first; pivot attack based on type (NTLM ≠ SHA1).
 - Start with high-quality dictionaries; add hybrid rules if needed.
 - Save outputs and keep a short evidence log (time, mode, wordlist).
 
-### Common Pitfalls
+#### Common Pitfalls
 - Attacking with the wrong mode (results in 0 cracks).
 - Forgetting to unzip rockyou.txt.
 - Running purely on CPU when GPU is available.
 
-### Key Lessons
+#### Key Lessons
 1. Identification First: Correct hash mode makes or breaks the crack.
 2. Wordlist Quality: Up-to-date lists dramatically improve success.
 3. Defense Matters: Strong policies + MFA blunt these attacks.
 
+### 💼 Relationship to the Workplace
 
-### Relationship to the Workplace
-Understanding and executing hash-cracking methodologies is indispensable for cybersecurity professionals. This expertise is precious for Red Team members, such as penetration testers, who must simulate real-world attacks to identify vulnerabilities within an organization's security infrastructure. Blue Team members, such as SOC analysts and security evaluators, benefit from this knowledge by gaining insight into potential threats and developing effective defense strategies. <br /> 
+Hash-cracking is a critical skill for cybersecurity professionals.
+- Red Team: Penetration testers simulate real-world attacks to expose password vulnerabilities.
+- Blue Team: SOC analysts and defenders use this knowledge to anticipate threats and strengthen defenses.
+Mastering password-cracking techniques helps identify weaknesses, enforce strong password policies, and promote MFA adoption—directly contributing to a more resilient security posture.
 
-Cybersecurity experts can master password-cracking techniques to proactively address and mitigate security weaknesses, thereby ensuring a more resilient security posture. This proficiency helps identify and rectify vulnerabilities, playing a crucial role in educating stakeholders about the importance of strong password policies and comprehensive security measures. In essence, the skills and insights gained from this project contribute significantly to the overarching goal of safeguarding organizational assets and maintaining robust cybersecurity defenses.
-
-![Hashcat-Animation](https://github.com/user-attachments/assets/647d783c-6964-4b87-ac18-106ba69903c7)
-<br /> 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/647d783c-6964-4b87-ac18-106ba69903c7" alt="Hashcat Animation" width="40%" />
+</p>
 
 ---
 
@@ -230,7 +239,6 @@ Types of Hash Algorithms </b>
 | NTLM          | Windows authentication   | Vulnerable to brute force   | Active Directory environments |
 | bcrypt        | Salted, slow, resistant  | Performance cost            | Modern password databases     |
 
-
 ---
 
 ## **Summary**
@@ -238,5 +246,7 @@ This project showcases essential skills for solving Capture the Flag (CTF) chall
 
 The techniques applied are crucial for cybersecurity professionals, especially in penetration testing, to effectively combat password-based threats. Overall, this project underscores the importance of hands-on exercises in developing the skills necessary for maintaining robust security infrastructures.
 
-![image](https://github.com/user-attachments/assets/79b5cba3-2343-4b3d-b4dd-f6e6f7874b8a)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/79b5cba3-2343-4b3d-b4dd-f6e6f7874b8a" width="50%" alt="hashcat_summary"/>
+</div>
 
