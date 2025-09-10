@@ -48,29 +48,40 @@ This lab demonstrates a reproducible, ethical workflow to crack a single NTLM ha
 
 > 🕵️‍♂️ **Happy Hunting!**
 
+---
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6dfc9198-6054-44b3-9cdc-51d3a9cf02b3" width="70%" alt="hashcat_lab"/>
 </div>
 
-
----
 # **Hashcat:** Password Cracking
 
-**Challenge Description**  
+### **Challenge Description**  
 This challenge focuses on password cracking through hash analysis, a key aspect of cybersecurity and ethical hacking. It involves reversing cryptographic hash functions used to securely store passwords, testing skills critical for identifying security vulnerabilities.
 
-**Relation to Ethical Hacking Course**  
+### **Relation to Ethical Hacking Course**  
 The exercise emphasizes the necessary skills for cracking passwords, which are essential in both ethical hacking and cybersecurity defense. It highlights the importance of strong password policies and the risks associated with weak passwords, aligning with the objectives of the ethical hacking course.
 
-**Lab Topic**  
+### **Lab Topic**  
 The lab focused on password security and cracking techniques, including brute-force and dictionary attacks, as well as the use of tools such as Hashcat. Participants learned to analyze various hash types and improve password security.
 
-**Hash Algorithms**  
+### **Hash Algorithms**  
 Understanding hash algorithms (e.g., MD5, SHA-1, NTLM) is vital, as each has unique characteristics and vulnerabilities.  
 
 <img src="https://github.com/user-attachments/assets/4b5ea32f-e265-47a2-b3ff-e3e1c9166e35" width="50%" alt="hash_function_behavior"/>
 
-## 🔑 Key Hash Algorithms (quick reference)
+### **Wordlists**  
+Familiarity with precompiled lists like rockyou.txt for dictionary attacks and skills to manage and update wordlists are crucial.
+
+<img src="https://github.com/user-attachments/assets/4f654418-056c-4e3e-bdbb-68a1062989c3" width="40%" alt="hashcat_wordlist"/>
+
+### **Hashcat: Installation and Setup**  
+Participants learned to install and configure Hashcat and understand commands for various attack types.
+
+### **Cryptography Basics**  
+Key concepts include differences between symmetric and asymmetric encryption, the role of salting, and best practices for key management.
+
+### 🔑 Key Hash Algorithms (quick reference)
 | Algorithm | Notes (Strengths/Weaknesses)               | Common Use |
 |---|---|---|
 | MD5 | Very fast, **broken** (collisions)               | Legacy apps/DBs |
@@ -79,21 +90,10 @@ Understanding hash algorithms (e.g., MD5, SHA-1, NTLM) is vital, as each has uni
 | NTLM | Windows hash; fast → **brute-forceable**        | AD/Windows |
 | bcrypt | Salted, slow → **resists cracking**           | Modern DBs |
 
-**Wordlists**  
-Familiarity with precompiled lists like rockyou.txt for dictionary attacks and skills to manage and update wordlists are crucial.
-
-<img src="https://github.com/user-attachments/assets/4f654418-056c-4e3e-bdbb-68a1062989c3" width="40%" alt="hashcat_wordlist"/>
-
-**Hashcat: Installation and Setup**  
-Participants learned to install and configure Hashcat and understand commands for various attack types.
-
-**Cryptography Basics**  
-Key concepts include differences between symmetric and asymmetric encryption, the role of salting, and best practices for key management.
-
-**Operating Systems**  
+### **Operating Systems**  
 Proficiency in Linux, particularly Kali Linux, and strong command-line skills are essential for executing scripts and managing files.
 
-**Cybersecurity Concepts**  
+### **Cybersecurity Concepts**  
 Knowledge of strong password policies, attack vectors that exploit weak passwords, and defense mechanisms such as multi-factor authentication is crucial for effective cybersecurity.
 
 ---
