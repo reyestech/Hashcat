@@ -12,18 +12,16 @@
   <img src="https://github.com/user-attachments/assets/46e0c415-8cd6-4246-a453-21666509c475" width="50%" alt="password_strength"/>
 </div>
 
-
 ## TL;DR
 - Crack a provided **NTLM** hash with **Hashcat** + **rockyou.txt** in a Kali VM.
 - Output results to `cracked.txt` and document defender takeaways (policies, MFA).
-
 
 ---
 
 # 🔐 Hashcat: Password Cracking
 
 ## What This Lab Covers
-This lab demonstrates a reproducible, ethical workflow to crack a single NTLM hash. You’ll identify the hash type, prepare the environment, run a dictionary attack, verify results, and note blue-team implications.
+This lab demonstrates a reproducible and ethical workflow for cracking a single NTLM hash. You’ll identify the hash type, prepare the environment, run a dictionary attack, verify results, and note blue-team implications.
 
 **You will:**
 - Verify the hash type (NTLM / Hashcat `-m 1000`)
@@ -32,7 +30,7 @@ This lab demonstrates a reproducible, ethical workflow to crack a single NTLM ha
 - Validate results and capture evidence
 - Summarize key lessons for defenders
 
-> **Ethics:** Use only in labs/authorized environments.
+**Ethics:** Use only in authorized labs or environments.
 
 ---
 
@@ -60,7 +58,7 @@ This lab demonstrates a reproducible, ethical workflow to crack a single NTLM ha
 This challenge focuses on password cracking through hash analysis, a key aspect of cybersecurity and ethical hacking. It involves reversing cryptographic hash functions used to securely store passwords, testing skills critical for identifying security vulnerabilities.
 
 ### **Relation to Ethical Hacking Course**  
-The exercise emphasizes the necessary skills for cracking passwords, which are essential in both ethical hacking and cybersecurity defense. It highlights the importance of strong password policies and the risks associated with weak passwords, aligning with the objectives of the ethical hacking course.
+The exercise emphasizes the necessary skills for cracking passwords, which are essential in both ethical hacking and cybersecurity defense. It emphasizes the importance of robust password policies and the risks associated with using weak passwords, aligning with the objectives of the ethical hacking course.
 
 ### **Lab Topic**  
 The lab focused on password security and cracking techniques, including brute-force and dictionary attacks, as well as the use of tools such as Hashcat. Participants learned to analyze various hash types and improve password security.
@@ -76,7 +74,7 @@ Familiarity with precompiled lists like rockyou.txt for dictionary attacks and s
 <img src="https://github.com/user-attachments/assets/4f654418-056c-4e3e-bdbb-68a1062989c3" width="40%" alt="hashcat_wordlist"/>
 
 ### **Hashcat: Installation and Setup**  
-Participants learned to install and configure Hashcat and understand commands for various attack types.
+Participants learned to install and configure Hashcat and understand commands for various types of attacks.
 
 ### **Cryptography Basics**  
 Key concepts include differences between symmetric and asymmetric encryption, the role of salting, and best practices for key management.
